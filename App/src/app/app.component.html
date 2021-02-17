@@ -1,3 +1,5 @@
 <h1>Angular</h1>
-<!-- renders the template of our component -->
-<app-search-bar></app-search-bar>
+<!-- renders the template of our components -->
+<app-search-bar (eventEmitter)="showVideo($event)"></app-search-bar>
+<p>{{url}}</p>
+<app-video-view url={{url}}></app-video-view>

@@ -3,8 +3,10 @@
     "",
     "\\App",
     "\\App\\src",
-    "\\App\\src\\app"
+    "\\App\\src\\app",
+    "\\App\\src\\app\\search-bar",
+    "\\App\\src\\app\\video-view"
   ],
-  "SelectedNode": "\\App\\angular.json",
+  "SelectedNode": "\\App\\src\\app\\video-view\\video-view.component.html",
   "PreviewInSolutionExplorer": false
 }
