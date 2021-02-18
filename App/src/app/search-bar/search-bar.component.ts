@@ -1,7 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'app-search-bar',
+  selector: 'searchBar',
   templateUrl: './search-bar.component.html',
   styleUrls: ['./search-bar.component.css']
 })

@@ -1,7 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
 
 @Component({
-  selector: 'app-history',
+  selector: 'History',
   templateUrl: './history.component.html',
   styleUrls: ['./history.component.css']
 })
@@ -15,7 +15,13 @@ export class HistoryComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.videos.push(this.video);
   }
 
+  ngOnChanges(changes: SimpleChanges) {
+    this.addToHist();
+  }
+
+  addToHist() {
+    this.videos.push(this.video);
+  }
 }

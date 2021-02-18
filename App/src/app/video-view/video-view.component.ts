@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-video-view',
+  selector: 'videoView',
   templateUrl: './video-view.component.html',
   styleUrls: ['./video-view.component.css']
 })

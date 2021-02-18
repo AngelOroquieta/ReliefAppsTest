@@ -1,0 +1,13 @@
+<div style="position:absolute; left:25%; bottom:20%">
+  <button (click)="addToBookmarks()" style="height: 26px; font-weight:bold">Add to bookmarks</button>
+</div>
+<div style="position:absolute; left:90%; bottom:15%">
+  <details class="bookmarks">
+    <summary>Bookmarks</summary>
+    <ul style="list-style-type:none;">
+      <li *ngFor="let bookmark of bookmarks">
+        {{bookmark}}
+      </li>
+    </ul>
+  </details>
+</div>

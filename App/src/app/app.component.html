@@ -13,11 +13,11 @@
 </head>
 <body>
   <div class="column hist">
-    <p><app-history>{{video}}</app-history></p>
-    <p>{{video}}</p>
+    <p><History>{{video}}</History></p>
   </div>
   <div class="column app">
-    <p><app-search-bar (eventEmitter)="showVideo($event); addToHist($event)"></app-search-bar></p>
-    <p><app-video-view url={{url}}></app-video-view></p>
+    <p><searchBar (eventEmitter)="showVideo($event); addToHist($event)"></searchBar></p>
+    <p><videoView url={{url}}></videoView></p>
+    <p><Bookmarks url={{url}}></Bookmarks></p>
   </div>
 </body>
