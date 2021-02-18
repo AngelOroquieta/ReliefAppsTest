@@ -6,7 +6,8 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./search-bar.component.css']
 })
 export class SearchBarComponent implements OnInit {
-  @Output() eventEmitter = new EventEmitter();
+  @Output() eventEmitter = new EventEmitter<string>();
+  url: string = '';
 
   constructor() { }
 
@@ -14,7 +15,7 @@ export class SearchBarComponent implements OnInit {
   }
 
   getUrl() {
-    this.eventEmitter.emit("https://www.youtube.com/watch?v=k5E2AVpwsko");
-    //this.eventEmitter.emit(document.getElementById("url"));
+    //this.eventEmitter.emit("https://www.youtube.com/watch?v=k5E2AVpwsko");
+    this.eventEmitter.emit(this.url);
   }
 }

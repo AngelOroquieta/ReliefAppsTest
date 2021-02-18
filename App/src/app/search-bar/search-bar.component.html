@@ -1,5 +1,4 @@
-<p>
-  URL: <input type="url" id="url" placeholder="Paste YouTube link here">
-  <!--<button onclick="getUrl()"> Display </button>-->
-  <a href="#" (click)="getUrl()">CLICK</a>
-</p>
+<div style="text-align:center;">
+  <input input type="url" [(ngModel)]="url" style="height: 20px; width: 600px">
+  <button (click)="getUrl()" style="height: 26px; font-weight:bold">Display</button>
+</div>
