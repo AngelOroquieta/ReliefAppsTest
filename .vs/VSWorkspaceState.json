@@ -4,9 +4,10 @@
     "\\App",
     "\\App\\src",
     "\\App\\src\\app",
+    "\\App\\src\\app\\history",
     "\\App\\src\\app\\search-bar",
     "\\App\\src\\app\\video-view"
   ],
-  "SelectedNode": "\\App\\src\\app\\video-view\\video-view.component.html",
+  "SelectedNode": "\\App\\src\\app\\history\\history.component.html",
   "PreviewInSolutionExplorer": false
 }

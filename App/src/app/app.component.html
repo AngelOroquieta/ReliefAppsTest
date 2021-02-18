@@ -1,3 +1,23 @@
-<!-- renders the template of our components -->
-<p><app-search-bar (eventEmitter)="showVideo($event)"></app-search-bar></p>
-<p><app-video-view url={{url}}></app-video-view></p>
+<head>
+  <style>
+    .column {
+      float: left;
+    }
+    .hist {
+      width: 15%;
+    }
+    .app {
+      width: 85%;
+    }
+  </style>
+</head>
+<body>
+  <div class="column hist">
+    <p><app-history>{{video}}</app-history></p>
+    <p>{{video}}</p>
+  </div>
+  <div class="column app">
+    <p><app-search-bar (eventEmitter)="showVideo($event); addToHist($event)"></app-search-bar></p>
+    <p><app-video-view url={{url}}></app-video-view></p>
+  </div>
+</body>

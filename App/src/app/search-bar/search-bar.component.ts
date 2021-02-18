@@ -15,7 +15,6 @@ export class SearchBarComponent implements OnInit {
   }
 
   getUrl() {
-    //this.eventEmitter.emit("https://www.youtube.com/watch?v=k5E2AVpwsko");
     this.eventEmitter.emit(this.url);
   }
 }
